@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+		<Layout :age="12"></Layout>
 		<view>
 			<text class="title">{{title}}</text>
 		</view>
@@ -8,7 +8,11 @@
 </template>
 
 <script>
+	import Layout from "../../components/layout.vue";
 	export default {
+		components: {
+			Layout
+		},
 		data() {
 			return {
 				title: 'Hello'
